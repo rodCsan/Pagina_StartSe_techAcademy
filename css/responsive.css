@@ -24,18 +24,12 @@
     }
 }
 
-
-@media (min-height: 631px) {
-    .container_menu{
-        display: none;
-    }
-}
-
 @media(max-width:1000px){
     .container {
         padding: 0px 20px;
     }
 }
+
 @media(max-width:630px){
     nav{
         display: none;
