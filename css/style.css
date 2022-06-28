@@ -9,8 +9,7 @@
 }
 
 html,
-body {
-    height: 100vh;
+body {    
     font-family: 'Source Sans Pro', sans-serif;
     text-rendering: optimizeLegibility; /*Melhora a qualidade do texto*/
     -webkit-font-smoothing:antialiased; /*Melhora a qualidade do texto*/
@@ -103,10 +102,16 @@ form input{
 form [type="submit"]{
     background-color: #0080ed;
     color: white;
+    width: 150px;
+    height: 40px;
+    padding-left: 0px;
+    font-size: 16px;
 }
 
 form [type="submit"]:hover{
-    cursor: pointer;    
+    cursor: pointer;
+    background-color: rgba(0, 128, 237, 0.75); 
+    transform: translateY(-2px);   
 }
 
 main .container_main img{
@@ -115,6 +120,9 @@ main .container_main img{
 
 
 /*Cards*/
+a{
+    text-decoration: none;
+}
 
 .cards{
     width: 90%;
@@ -123,6 +131,7 @@ main .container_main img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
+   
 }
 
 .text_medium{
@@ -137,7 +146,8 @@ main .container_main img{
     flex-direction: column;
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px #000000;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; 
+    border-radius: 10px;
 }
 
 .card:hover{
@@ -149,6 +159,8 @@ main .container_main img{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0 ;
+    height: 225px;
 }
 
 .image img{
